@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Syne", sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    padding: 3px 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 10rem;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+.nav-links a {
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+.nav-links a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.hire-btn {
+    padding: 8px 30px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s;
+}
+.hire-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+.hero h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14rem;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 800;
+
+
+}
+.logos-container{
+    width: 50rem;
+    margin: 12rem 9rem;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.logos-slide{
+    display: inline-block;
+    white-space: nowrap;
+    animation: 15s slide infinite linear;
+}
+.logos-slide img{
+    margin: 0 6rem;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.outer-container{
+    display: flex;
+    justify-content: center;
+
+}
+.paragraph{
+    margin: 12rem 2rem;
+    color: #808080;
+
+}
+.experties-container{
+    display: flex;
+}
+.experties{
+    padding: 5rem 8rem;
+
+}
+.description li{
+padding: 2rem 0;
+font-size: 32px;
+font-weight: 600;
+}
+.description p{
+    color: #808080;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
+.description{
+    display: flex;
+    justify-content: center;
+
+}
+.description-row1{
+    margin-right: 20rem;
+    padding-right: 3rem;
+
+}
+.description-row2{
+
+    margin-right: 1rem;
+    padding-right: 3rem;
+}
+.Projects-container{
+    margin: 10rem 10rem 3px 10rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.specific-project-container{
+    display: flex;
+    border-radius: 40px;
+    padding: 1rem;
+    background-image: linear-gradient(180deg, rgb(20, 20, 20), rgb(36, 36, 36),rgb(27, 27, 27));
+    margin: 2rem 10rem;
+}
+.projects-description{
+
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+.project-description-inner p{
+    color: #808080;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+.button-container-project{
+    margin-top: 15rem;
+
+}
+.project-browse{
+    font-size: 20px;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    border: 1px solid white;
+    background: none;
+    color: white;
+}
+.project-browse:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.whole-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.outer-project-container{
+
+    display: flex;
+    justify-content: center;
+}
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="logo.png" alt=""></div>
+            
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="button-container">
+                <button class="hire-btn">Hire Me</button>
+                </div>
+        </nav>
+    </header>
+<div class="whole-container">
+    <div class="main-container">
+        <div class="hero">
+            <h1>
+                I AM KARL LUMABI A UI/UX <br> DESIGNER AND FRONT-END <br> DEVELOPER
+            </h1>
+        </div>
+    
+        <div class="outer-container">
+            <div class="logos-container">
+                <div class="logos-slide">
+                    <img src="Figma.svg" alt="">
+                    <img src="html.svg" alt="">
+                    <img src="css.svg" alt="">
+                    <img src="nextjs.svg" alt="">
+                </div>
+                <div class="logos-slide">
+                    <img src="Figma.svg" alt="">
+                    <img src="html.svg" alt="">
+                    <img src="css.svg" alt="">
+                    <img src="nextjs.svg" alt="">
+                </div>
+            </div>
+            <div class="paragraph">
+                <p>WeLcome to my portfolio. Where creativity meets precision. <br>Explore a collection of intuitive interfaces and sleek designs, <br> each crafted to enhance user experience and elevate digital interactions.</p>
+            </div>
+        </div>
+        
+                <div class="experties-container">
+                    <div class="experties">
+                        <h1><img src="highlighter.svg" alt=""> EXPERTIES</h1>
+                    </div>
+                    </div>
+                        <div class="description">
+                            <div class="description-row1">
+                                <ul>
+                                    <li>UI DESIGN</li>
+                                    <p>I craft visually captivating, efficient, and responsive interfaces<br>that deliver seamless user experiences. My designs are intuitive, <br> user-centered, and adapted to modern web standards, <br>ensuring both aesthetic appeal and functionality.</p>
+                                    <li>Front-End Development</li>
+                                    <p>I transform design into interactive, high-performance websites.<br> Using modern technologies and clean code, I ensure responsive,<br> scalable, and pixel-perfect builds that deliver<br> a polished user experience across devices.</p>
+                                </ul>
+                            </div>
+                            <div class="description-row2">
+                                <ul>
+                                    <li>UX Design</li>
+                                    <p>I focus on understanding user behavior and solving digital <br>problems through research-driven, empathetic design.<br> By balancing aesthetics and usability, I create experiences <br>that engage users and fulfill business goals.</p>
+                                    <li>Branding</li>
+                                    <p>I develop cohesive, memorable brand identities that resonate<br> with your audience. With a focus on consistency and<br> clarity, I help brands stand out by blending creativity with strategy.</p>
+                                </ul>
+                            </div>
+                        </div>
+
+                <div class="Projects-container">
+                    <div class="projects">
+                        <h1><img src="highlighter.svg" alt=""> PROJECTS</h1>
+                        <span>view all</span>
+                    </div>
+                    
+                </div>
+                <div class="outer-project-container">
+                <div class="specific-project-container">
+                    <div class="project-img"> 
+                        <img src="bdle.svg" alt="">
+                    </div>
+                    <div class="projects-description">
+                        <div class="project-description-inner">
+                        <h1>BIDDLE SYSTEM</h1>
+                        <P>BDLE, an AdNU-based Beadle Attendance System which digitalizes the current system to streamline the process of checking attendance. With this it will increase the productivity and efficiency while saving lots of time and paperwork for both the students and the OSA Employees</P>
+                    </div>    
+                        <div class="button-container-project">
+                                <button class="project-browse"> browse</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outer-project-container">
+                <div class="specific-project-container">
+                    <div class="project-img"> 
+                        <img src="adnup_ay.svg" alt="">
+                    </div>
+                    <div class="projects-description">
+                        <div class="project-description-inner">
+                        <h1>BIDDLE SYSTEM</h1>
+                        <P>BDLE, an AdNU-based Beadle Attendance System which digitalizes the current system to streamline the process of checking attendance. With this it will increase the productivity and efficiency while saving lots of time and paperwork for both the students and the OSA Employees</P>
+                    </div>    
+                        <div class="button-container-project">
+                                <button class="project-browse"> browse</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="outer-project-container">
+                <div class="specific-project-container">
+                    <div class="project-img"> 
+                        <img src="bdle.svg" alt="">
+                    </div>
+                    <div class="projects-description">
+                        <div class="project-description-inner">
+                        <h1>BIDDLE SYSTEM</h1>
+                        <P>BDLE, an AdNU-based Beadle Attendance System which digitalizes the current system to streamline the process of checking attendance. With this it will increase the productivity and efficiency while saving lots of time and paperwork for both the students and the OSA Employees</P>
+                    </div>    
+                        <div class="button-container-project">
+                                <button class="project-browse"> browse</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                
+
+            </div>
+    </div>
+    
+    </body>
+    
+</body>
+</html>
